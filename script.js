@@ -26,25 +26,25 @@ let start = new Date().getTime();
             
             if (Math.random() > 0.5) {
 
-                document.getElementById("shape").style.borderRadius = "50%";
+                document.getElementByClassName("shape").style.borderRadius = "50%";
 
             } else {
                 
-                document.getElementById("shape").style.borderRadius = "";
+                document.getElementByClassName("shape").style.borderRadius = "";
 
             }
 
-            document.getElementById("shape").style.backgroundColor = getRandomColor();
+            document.getElementByClassName("shape").style.backgroundColor = getRandomColor();
 
-            document.getElementById("shape").style.top = top + "px";
+            document.getElementByClassName("shape").style.top = top + "px";
 
-            document.getElementById("shape").style.left = left + "px";
+            document.getElementByClassName("shape").style.left = left + "px";
 
-            document.getElementById("shape").style.width = width + "px";
+            document.getElementByClassName("shape").style.width = width + "px";
 
-            document.getElementById("shape").style.height = width + "px";
+            document.getElementByClassName("shape").style.height = width + "px";
 
-            document.getElementById("shape").style.display = "block";
+            document.getElementByClassName("shape").style.display = "block";
 
             start = new Date().getTime();
 
@@ -58,15 +58,15 @@ let start = new Date().getTime();
 
         appearAfterDelay();
 
-        document.getElementById("shape").onclick = function() {
+        document.getElementByClassName("shape").onclick = function() {
 
-            document.getElementById("shape").style.display = "none";
+            document.getElementByClassName("shape").style.display = "none";
             
             let end = new Date().getTime(); 
 
             let timeTaken = (end - start) / 1000;
             
-            document.getElementById("timeTaken").innerHTML = timeTaken + "s"
+            document.getElementByClassName("timeTaken").innerHTML = timeTaken + "s"
 
             appearAfterDelay();
             
